@@ -1,0 +1,32 @@
+{
+  "fitbit": {
+    "appUUID": "4fe4f432-ac4b-4077-9178-03cae2adf50c",
+    "appType": "clockface",
+    "appDisplayName": "BinaryPunch",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "mira"
+    ],
+    "i18n": {
+      "en": {
+        "name": "BinaryPunch"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.0.0"
+  },
+  "dependencies": {
+    "clock": "file:./web/clock",
+    "document": "file:web/document",
+    "heart-rate": "file:web/heart-rate",
+    "user-settings": "file:web/user-settings"
+  }
+}

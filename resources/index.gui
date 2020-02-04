@@ -1,0 +1,109 @@
+<svg class="background">
+  
+  <!-- HR Monitor -->
+  <rect x="0" y="82%" width="100%" height="1" fill="#660000" />
+  
+  <defs>
+    <symbol id="hrpeak">
+      <g transform="translate(-10,82%)" pointer-events="visible">
+        <animateTransform attributeType="translate" begin="enable" end="disable"
+          from="-10,82%" to="100%+10,82%" dur="3" final="remove" />
+        <animateTransform attributeType="scale" easing="ease-out-in" from="1" to="3" begin="enable"  dur="1.5" />
+        <animateTransform attributeType="scale" easing="ease-in-out" from="3" to="1"  begin="enable+1.5" dur="1.5" />
+        <rect x="0" y="0" width="1" height="90" fill="#FF0000" />
+      </g>
+    </symbol>
+  </defs>
+  <svg width="100%" height="100%">
+    <use id="hrpeakinstance0" href="#hrpeak" width="100%" height="100%" />
+  </svg>
+  <svg width="100%" height="100%">
+    <use id="hrpeakinstance1" href="#hrpeak" width="100%" height="100%" />
+  </svg>
+  <svg width="100%" height="100%">
+    <use id="hrpeakinstance2" href="#hrpeak" width="100%" height="100%" />
+  </svg>
+  <svg width="100%" height="100%">
+    <use id="hrpeakinstance3" href="#hrpeak" width="100%" height="100%" />
+  </svg>
+  <svg width="100%" height="100%">
+    <use id="hrpeakinstance4" href="#hrpeak" width="100%" height="100%" />
+  </svg>
+  <svg width="100%" height="100%">
+    <use id="hrpeakinstance5" href="#hrpeak" width="100%" height="100%" />
+  </svg>
+    <svg width="100%" height="100%">
+    <use id="hrpeakinstance6" href="#hrpeak" width="100%" height="100%" />
+  </svg>
+  <svg width="100%" height="100%">
+    <use id="hrpeakinstance7" href="#hrpeak" width="100%" height="100%" />
+  </svg>
+  <svg width="100%" height="100%">
+    <use id="hrpeakinstance8" href="#hrpeak" width="100%" height="100%" />
+  </svg>
+
+  
+
+  
+  
+  <!-- Binary Clock -->
+  <g id="clock">
+    
+    
+    <circle cx="50" cy="100" r="12" class="h1 0 bit" /><!-- 1 -->
+    <circle cx="50" cy="140" r="12" class="m1 0 bit" /><!-- 1 -->
+    <circle cx="50" cy="180" r="12" class="s1 0 bit" /><!-- 1 -->
+
+    
+    
+    <circle cx="90" cy="100" r="12" class="h1 1 bit" /><!-- 1 -->
+    <circle cx="90" cy="140" r="12" class="m1 1 bit" /><!-- 1 -->
+    <circle cx="90" cy="180" r="12" class="s1 1 bit" /><!-- 1 -->
+  
+    <circle cx="140" cy="100" r="12" class="h1 2 bit" /><!-- 1 -->
+    <circle cx="140" cy="140" r="12" class="m1 2 bit" /><!-- 1 -->
+    <circle cx="140" cy="180" r="12" class="s1 2 bit" /><!-- 1 -->
+  
+    <circle cx="180" cy="100" r="12" class="h1 3 bit" /><!-- 1 -->
+    <circle cx="180" cy="140" r="12" class="m1 3 bit" /><!-- 1 -->
+    <circle cx="180" cy="180" r="12" class="s1 3 bit" /><!-- 1 -->
+  
+  
+    
+    <circle cx="230" cy="100" r="12" class="h1 4 bit" /><!-- 1 -->
+    <circle cx="230" cy="140" r="12" class="m1 4 bit" /><!-- 1 -->
+    <circle cx="230" cy="180" r="12" class="s1 4 bit" /><!-- 1 -->
+
+    
+    <circle cx="270" cy="100" r="12" class="h1 5 bit" /><!-- 2 -->
+    <circle cx="270" cy="140" r="12" class="m1 5 bit" /><!-- 2 -->
+    <circle cx="270" cy="180" r="12" class="s1 5 bit" /><!-- 1 -->
+
+  
+    <text x="300" y="110" fill="#333333" font-family="System-Regular">h</text>
+    <text x="300" y="150" fill="#333333" font-family="System-Regular">m</text>
+    <text x="300" y="190" fill="#333333" font-family="System-Regular">s</text>
+    
+  </g>
+
+  
+  <defs>
+    <symbol id="glitch">
+      <g transform="translate(0,-40%)" pointer-events="visible">
+        <animateTransform attributeType="translate" begin="load" dur="1" easing="ease-out-in" repeatCount="indefinite" repeatDur="7"
+          from="0,-10%" to="0,110%" final="restore" />
+        <animate attributeName="opacity" begin="load" from="0" to="1" dur="0.5" final="restore" repeatCount="indefinite" repeatDur="0.3" />
+        <animate attributeName="opacity" begin="load+0.5" from="1" to="0" dur="0.5" final="restore" repeatCount="indefinite" repeatDur="0.7" />
+        <rect x="0" y="0%" width="100%" height="40" fill="#000000" opacity="0.4" />
+      </g>
+    </symbol>
+  </defs>
+  <svg width="100%" height="100%">
+    <use id="glitchinstance" href="#glitch" width="100%" height="100%" />
+  </svg>
+  
+  <image href="oldcrt.png" width="100%" height="100%" opacity="0.6" />
+</svg>
+
+
+

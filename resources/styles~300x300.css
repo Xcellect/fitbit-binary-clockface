@@ -1,0 +1,11 @@
+.background {
+  viewport-fill: #0a120a;
+}
+
+.bit {
+  fill: #3b3b3b
+}
+
+#clock {
+  transform: scale(0.9)
+}
